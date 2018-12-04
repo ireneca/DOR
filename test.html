@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="" type="image/gif" >
+        <title>Irene Y Alejandro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body onload="initialize()">
+        <div id="box">
+            <div id="titulo">
+                <header>
+                    <div id="letras"><h1>Walking trails in Fuerteventura</h1></div>
+                    <div id="logo"><img src="img/logo.png"></div>
+                </header>
+                <nav>
+                    <button class="tablinks" id="defaultOpen" onclick="changeVideo(event, 'Video1')">Video 1</button>
+                    <button class="tablinks" onclick="changeVideo(event, 'Video2')">Video 2</button>
+                    <button class="tablinks" onclick="changeVideo(event, 'Video3')">Video 3</button>
+                </nav>
+            </div>
+            <div id="cuerpo">              
+                <section id="cambio">
+                    <div id="Video1" class="navContent">
+                        <article>
+                                
+                        </article>
+                    </div>
+                    <div id="Video2" class="navContent">
+                        <article>
+                                
+                        </article>
+                    </div>
+                    <div id="Video3" class="navContent">
+                        <article>
+                                
+                        </article>
+                    </div>
+                </section>
+                <aside id="canvas"></aside>
+            </div>
+            <footer>
+                <div>
+                    <p>Alejandro Quintana Mateo & Irene Caubín Alonso</p>
+                </div><div>
+                    <p>CIFP MAJADA MARCIAL</p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
