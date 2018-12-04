@@ -1,6 +1,43 @@
 * {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
+body {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
+#box{
+    width: 75%;
+    margin: auto;
+}
+#titulo{
+    border-style: solid;
+    background-color: white;
+    font-family: cursive;
+}
+header{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    display: flex;
+}
+#letras{
+    width: 60%;
+    background-color: #19D4FF;
+    text-align: right;
+    padding-right: 10px;
+}
+#logo{
+    width: 50%;
+    text-align: left;
+    background-color: #19D4FF;
+    padding-bottom: 10px
+}
+#logo>img{
+    width:25%;
+    height:100%;
+}
 /* Style the tab */
 .tab {
     float: left;
@@ -43,4 +80,25 @@ body {font-family: "Lato", sans-serif;}
     width: 70%;
     border-left: none;
     height: 300px;
+}
+footer{
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    height: 50px;
+    background-color: #B20949;
+    text-align: center;
+}
+footer>div{
+    display: table;
+    width: 99%;
+    height: 50%;
+}
+footer p{
+    margin: 0;
+    font-family: cursive;
+    font-size: 10pt;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
 }
