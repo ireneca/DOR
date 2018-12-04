@@ -39,8 +39,8 @@ header{
 }
 .garden {
   position: relative;
-  width : 200px;
-  height: 200px;
+  width : 100%;
+  height: 90%;
   border: 5px solid #CCC;
   border-radius: 10px;
 }
