@@ -4,16 +4,14 @@ body {
     height: 100%;
     margin: 0;
 }
-#titulo{
-    border-style: solid;
-    background-color: white;
-    font-family: cursive;
-}
 header{
     text-align: center;
     display: inline-block;
     height: auto;
     display: flex;
+    border-style: solid;
+    background-color: white;
+    font-family: cursive;
 }
 #letras{
     width: 60%;
@@ -75,12 +73,14 @@ header{
     height: 300px;
 }
 footer{
-    margin: auto;
     border-style: solid;
     border-color: black;
     height: 50px;
-    background-color: #B20949;
+    background-color: #19D4FF;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 footer>div{
     display: table;
@@ -91,7 +91,7 @@ footer p{
     margin: 0;
     font-family: cursive;
     font-size: 10pt;
-    color: white;
+    color: black;
     display: table-cell;
     vertical-align: middle;
 }
