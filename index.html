@@ -7,10 +7,8 @@
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <script type="text/javascript">
 function showPosition(){
-    let width = window.innerWidth - 30;
-    let height = window.innerHeight - 30;
-    document.getElementById("mapid").style.width = `${width}px`; 
-    document.getElementById("mapid").style.height = `${height}px`;
+    document.getElementById("mapid").style.width = `${window.innerWidth - 30}px`; 
+    document.getElementById("mapid").style.height = `${window.innerHeight - 30}px`;
     
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(showMap, showError);
@@ -66,5 +64,11 @@ function showError(error){
     <div id="mapid">
         <!--map will be embedded here-->
     </div>
+    <script>
+    window.addEventListener("resize",()=>{
+        document.getElementById("mapid").style.width = `${window.innerWidth - 30}px`; 
+        document.getElementById("mapid").style.height = `${window.innerHeight - 30}px`;
+    });
+    </script>
 </body>
 </html>
