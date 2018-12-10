@@ -19,15 +19,17 @@
             <div id="logo"><img src="img/logo.png"></div>
         </header>
         <nav class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Acelerometro</button>
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Geolocation</button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">Geolocation</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Compass + Geolocation</button>
         </nav>
         <section id="London" class="tabcontent">
-          <div class="garden">
-            <div class="ball"></div>
-          </div>
-          <pre class="output"></pre>
+          <button type="button" onclick="showPosition();">Muestrame mi posición en Open Street Map</button>
+
+                <div id="embedMap" style="width: 100%; height: 90%;">
+
+            <!--Google map will be embedded here-->
+
+            </div>
         </section>
         <section id="Paris" class="tabcontent">
             <button type="button" onclick="showPosition();">Muestrame mi posición en Open Street Map</button>
@@ -37,13 +39,6 @@
             <!--Google map will be embedded here-->
 
             </div>
-        </section>
-        <section id="Tokyo" class="tabcontent">
-            <article id="compassHousing">
-                <canvas id="compassFace"></canvas>
-                <canvas id="compassNeedle"></canvas>
-            </article>
-            <div id="map"></div>
         </section>
         <footer>
             <div>
