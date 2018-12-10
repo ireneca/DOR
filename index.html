@@ -10,33 +10,29 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
     </head>
-    <body>
+    <body onload="showPosition();">
         <header>
             <div id="letras"><h1>Walking trails in Fuerteventura</h1></div>
             <div id="logo"><img src="img/logo.png"></div>
         </header>
-        <nav class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Geolocation</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Geolocation</button>
-        </nav>
-        <section id="London" class="tabcontent">
-          <button type="button" onclick="showPosition();">Muestrame mi posición en Open Street Map</button>
+        <div class="container">
+            <nav class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Geolocation</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">OTRO</button>
+            </nav>
+            <section id="London" class="tabcontent">
+            <!--<button type="button" onclick="showPosition();">Muestrame mi posición en Open Street Map</button>-->
 
-                <div id="embedMap" style="width: 100%; height: 90%;">
+                    <div id="embedMap" style="width: 100%; height: 90%;">
 
-            <!--Google map will be embedded here-->
+                <!--Google map will be embedded here-->
 
-            </div>
-        </section>
-        <section id="Paris" class="tabcontent">
-            <button type="button" onclick="showPosition();">Muestrame mi posición en Open Street Map</button>
-
-                <div id="embedMap" style="width: 100%; height: 90%;">
-
-            <!--Google map will be embedded here-->
-
-            </div>
-        </section>
+                </div>
+            </section>
+            <section id="Paris" class="tabcontent">
+                
+            </section>
+        </div>
         <footer>
             <div>
                 <p>Alejandro Quintana Mateo & Irene Caubín Alonso</p>
