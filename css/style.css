@@ -31,7 +31,7 @@ header{
 }
 .container{
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 /* Style the tab */
 .tab {
@@ -81,8 +81,6 @@ footer{
     height: 50px;
     background-color: #19D4FF;
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 footer>div{
