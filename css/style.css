@@ -10,7 +10,7 @@ header{
     height: auto;
     display: flex;
     border-style: solid;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     font-family: cursive;
 }
 #letras{
@@ -79,7 +79,7 @@ footer{
     border-style: solid;
     border-color: black;
     height: 50px;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     text-align: center;
     width: 100%;
 }
