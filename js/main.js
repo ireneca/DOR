@@ -52,7 +52,7 @@ document.getElementById("defaultOpen").click();
 	}).addTo(mymap);
 
         L.marker([lat, long]).addTo(mymap)
-		.bindPopup(`<b>You are here!</b>.<br> <p>This is your position</p><p> latitude: ${lat} </p><p>longitude: ${long}</p>`);
+		.bindPopup(`<b>You are here!</b>.<br> <p>This is your position</p><p> <b>latitude</b>: ${lat} </p><p><b>longitude</b>: ${long}</p>`);
 
 
     }
