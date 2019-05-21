@@ -18,7 +18,8 @@ document.getElementById("defaultOpen").click();
 
         if(navigator.geolocation){
 
-            navigator.geolocation.getCurrentPosition(showMap, showError);
+            navigator.geolocation.getCurrentPosition(showMap, showError,,
+    {maximumAge:10000, timeout:5000, enableHighAccuracy: true});
 
         } else{
 
