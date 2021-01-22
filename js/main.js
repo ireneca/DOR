@@ -43,7 +43,7 @@ document.getElementById("defaultOpen").click();
 
         var mymap = L.map('embedMap').setView([lat, long],13);
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYWxlamFuZHJvcW0yMyIsImEiOiJja2o5eXZtbzQ1ZHpiMnJuNGx0MW9hc3N5In0.Ld23EBGhSeuOyHT8modfbg', {
+        L.tileLayer('https://api.tiles.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYWxlamFuZHJvcW0yMyIsImEiOiJja2o5eXZtbzQ1ZHpiMnJuNGx0MW9hc3N5In0.Ld23EBGhSeuOyHT8modfbg', {
 		maxZoom: 16,
 		minZoom: 7,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
